@@ -1,25 +1,38 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { useAppDispatch, useAppSelector } from "./redux/hooks";
+import { setDarkTheme, setLightTheme, toggleTheme } from "./redux/features/theme/themeSlice";
+import { useEffect } from "react";
+import useLocalStorage from "./services/browser/useLocalStorage";
+import AppRoutes from "./routes/Routes";
 
-function App() {
+const App = () => {
+  const dispatch = useAppDispatch();
+  const theme = useAppSelector((state) => state?.theme?.theme)
+  const [appTheme] = useLocalStorage('app-theme')
+
+  const themeHandler = () => {
+    dispatch(toggleTheme())
+  }
+
+  useEffect(() => {
+    if (appTheme == 'dark') {
+      dispatch(setDarkTheme())
+    } else {
+      dispatch(setLightTheme())
+    }
+  }, [])
+
+  useEffect(() => {
+    if (theme === 'dark') {
+      document.body.classList.remove("light")
+      document.body.classList.add("dark")
+    } else {
+      document.body.classList.remove("dark")
+      document.body.classList.add("light")
+    }
+  }, [theme])
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <AppRoutes/>
   );
 }
 
