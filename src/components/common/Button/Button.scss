@@ -1,0 +1,205 @@
+.btn{
+    border-radius: 0.45rem;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: normal;
+    line-height: 1.5;
+    padding: 0.375rem 0.75rem;
+    text-align: center;
+    text-transform: none;
+    transition: color 0.15s ease-in-out,
+    background-color 0.15s ease-in-out,border-color 0.15s ease-in-out,box-shadow 0.15s ease-in-out;
+    vertical-align: middle;
+    white-space: nowrap;
+    word-spacing: normal;
+    }
+    .primary{
+        background-color: #0D6EFD;
+        border:none;
+        color: #FFFFFF;
+        &:hover{
+          background-color: #0B5ED7;
+        }
+        &:disabled{
+          // CSS for Disabled Button
+        background-color: rgb(179, 175, 175);
+        cursor: not-allowed;
+        }
+    }
+    .secondary{
+      background-color: #6C757D;
+      border:none;
+        color: #FFFFFF;
+        &:hover{
+          background-color: #5C636A;
+        }
+        &:disabled{
+          // CSS for Disabled Button
+        background-color: rgb(179, 175, 175);
+        cursor: not-allowed;
+        }
+    }
+    .success{
+      background-color: #28A745;
+      border:none;
+      color: #FFFFFF;
+      &:hover{
+        background-color: #157347;
+      }
+      &:disabled{
+        // CSS for Disabled Button
+        background-color: rgb(179, 175, 175);
+        cursor: not-allowed;
+      }
+    }
+    .warning{
+      background-color: #FFC107;
+      border:none;
+      color: #000000;
+      &:hover{
+        background-color: #FFCA2C;
+      }
+      &:disabled{
+        // CSS for Disabled Button
+        cursor: not-allowed;
+        background-color: rgb(179, 175, 175);
+      }
+    }
+    .danger{
+      background-color: #DC3545;
+      border:none;
+      color: #FFFFFF;
+      &:hover{
+        background-color: #BB2D3B;
+      }
+      &:disabled{
+        // CSS for Disabled Button
+        cursor: not-allowed;
+        background-color: rgb(179, 175, 175);
+      }
+    }
+    .info{
+      background-color: #0DCAF0;
+      border:none;
+      color: #000000;
+      &:hover{
+        background-color: #31D2F2;
+      }
+      &:disabled{
+        // CSS for Disabled Button
+        cursor: not-allowed;
+        background-color: rgb(179, 175, 175);
+      }
+    }
+    .dark{
+      background-color: #212529;
+      border-color: #212529;
+      border:none;
+
+      color: #FFFFFF;
+      &:hover{
+        background-color: #424649;
+      }
+      &:disabled{
+        // CSS for Disabled Button
+        cursor: not-allowed;
+        background-color: rgb(179, 175, 175);
+      }
+    }
+    .primary-outline{
+      background-color: transparent;
+      border: 1px solid #007BFF;
+      color: #007BFF;
+      &:hover{
+        background-color: #007BFF;
+        color: #FFFFFF;
+      }
+      &:disabled{
+        // CSS for Disabled Button
+        cursor: not-allowed;
+      }
+    }
+    .secondary-outline{
+      background-color: transparent;
+      border: 1px solid #6C757D;
+      color: #6C757D;
+      &:hover{
+        background-color: #6C757D;
+        color: #FFFFFF;
+      }
+      &:disabled{
+        // CSS for Disabled Button
+        cursor: not-allowed;
+      }
+    }
+    .success-outline{
+      background-color: transparent;
+      border: 1px solid #28A745;
+      color: #28A745;
+      &:hover{
+        background-color: #28A745;
+        color: #FFFFFF;
+      }
+      &:disabled{
+        // CSS for Disabled Button
+        cursor: not-allowed;
+      }
+    }
+    .warning-outline{
+      background-color: transparent;
+      border: 1px solid #FFC107;
+      color: #FFC107;  
+      &:hover{
+        background-color: #FFC107;
+        color: #000000;
+      }
+      &:disabled{
+        // CSS for Disabled Button
+        cursor: not-allowed;
+      }
+    }
+    .danger-outline{
+      background-color: transparent;
+      border: 1px solid #DC3545;
+      color: #DC3545;  
+      &:hover{
+        background-color: #DC3545;
+        color: #FFFFFF;
+      }
+      &:disabled{
+        // CSS for Disabled Button
+        cursor: not-allowed;
+      }
+    }
+    .info-outline{
+      background-color: transparent;
+      border: 1px solid #0DCAF0;
+      color: #0DCAF0;  
+      &:hover{
+        background-color: #0DCAF0;
+        color: #000000;
+      }
+      &:disabled{
+        // CSS for Disabled Button
+        cursor: not-allowed;
+      }
+    }
+    .dark-outline{
+      background-color: transparent;
+      border:1px solid #343A40;
+      color: #343A40;  
+      &:hover{
+        background-color: #343A40;
+        color: #FFFFFF;
+      }
+      &:disabled{
+        // CSS for Disabled Button
+        cursor: not-allowed;
+      }
+    }
+    
+    .full-width{
+        width: 100%;
+    }

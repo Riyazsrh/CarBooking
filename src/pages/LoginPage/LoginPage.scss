@@ -1,0 +1,59 @@
+.login-page {
+    // background-image: url("https://images.unsplash.com/photo-1518554908584-8435af0289c4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80");
+    // background-position: center;
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+
+    .login-items-container {
+        background-color: #FFFFFF;
+        width: 40%;
+        max-width: 400px;
+        padding: 1rem;
+        border-radius: 0.625rem;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        .login-heading-container {
+            display: flex;
+            justify-content: center;
+
+            .login-heading {
+                color: #000000;
+                font-size: 2rem;
+                font-weight: 800;
+            }
+        }
+
+        .mb-2 {
+            margin-bottom: 1rem;
+
+            .mb-1 {
+                margin-bottom: 0.2rem;
+
+                .label {
+                    font-size: 1rem;
+                    margin-left: 5px;
+                    color: #afa8a8;
+                }
+            }
+        }
+
+
+        .sign-up-text {
+            color: #000000;
+            margin-left: 5px;
+
+            .sign-up {
+                text-decoration: none;
+                font-weight: 600;
+                color: #0D6EFD;
+            }
+        }
+    }
+}
