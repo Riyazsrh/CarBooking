@@ -3,6 +3,7 @@ import { setDarkTheme, setLightTheme, toggleTheme } from "./redux/features/theme
 import { useEffect } from "react";
 import useLocalStorage from "./services/browser/useLocalStorage";
 import AppRoutes from "./routes/Routes";
+import Navbar from "./components/Navbar/Navbar";
 
 const App = () => {
   const dispatch = useAppDispatch();
@@ -32,7 +33,10 @@ const App = () => {
   }, [theme])
 
   return (
-    <AppRoutes/>
+    <>
+      <Navbar />
+      <AppRoutes />
+    </>
   );
 }
 
